@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #ff6f61;
+}
+
+.welcome-message {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+input[type="text"], button {
+    padding: 12px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    width: 60%;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+input[type="text"]:focus {
+    background-color: #ffe0b2;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#task-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f3fe;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ffb74d;
+}
+
+tbody tr:hover {
+    background-color: #ffe0b2;
+}
+
+.task-actions button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 7px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.task-actions button:hover {
+    background-color: #ff4949;
+    transform: scale(1.1);
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+    color: #e0e0e0;
+}
+
+.container.dark-mode {
+    background-color: #444;
+    color: white;
+}
+
+#task-stats.dark-mode {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+}
+
+.dark-mode th {
+    color: #e0e0e0;
+}

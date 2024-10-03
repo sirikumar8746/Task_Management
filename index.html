@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div id="welcome-message" class="welcome-message"></div>
+        <div>
+            <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+        </div>
+        <div>
+            <input type="text" id="task-input" placeholder="Add a new task" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div>
+            <button onclick="showPendingTasks()">Show Pending Tasks</button>
+            <button onclick="showCompletedTasks()">Show Completed Tasks</button>
+            <button onclick="displayTasks()">Show All Tasks</button>
+        </div>
+        <div id="task-stats">
+            <p id="pending-tasks"></p>
+            <p>Total Pending: <span id="pending-count">0</span></p>
+            <p>Total Completed: <span id="completed-count">0</span></p>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
